@@ -2,132 +2,160 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aman kumar| Front-End Developer</title>
-  <style>
-    body {
-      background-image: url(img/bg.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Kumar | Front-End Developer</title>
+  <style>  
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient( red, blue, orange);
+  color: white;
+  }
 
-    .image {
-      text-align: center;
-      color: whitesmoke;
-      font-size: 2.3em;
-    }
+  .image {
+  text-align: center;
+  padding: 20px;
+  }
+  .image p{
+  font-size:1.5em;
+  }
 
-    section {
-      color: white;
-      text-align: center;
-      font-size: 2em;
-      border-color: aqua;
-      
-    }
+  .image h1 {
+  font-size: 2.5em;
+  }
 
-    section h2 {
-      color: navy;
-    }
+  .about, .contact {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 
-    footer {
-      color:white;
-      text-align: center;
-      font-size: 1.5em;
-    }
+  }
 
-    footer div{
-      height: 50px;
-    }
+  .projects ul, h2, .skills ul{
+  text-align: center;
+  width: 95%;
+  }
 
-    section pre{
-      text-align: center;
-    
-      
-    }
+  .projects h2, .skills h2{
+  text-align: center;
+  width: 100%;
+  }
+
+  .contact h2, p {
+  text-align: center;
+  width: 100%;
+  }
+  .about-table div {
+  margin: 10px;
+  }
+
+  .social-icons img {
+  margin: 10px;
+  }
+  .social-icons img:hover{
+  transform: scale(1.5);
+  background-color: yellow;
+  border-radius: 70%;
+  }
+
+  .contact a{
+  color: white;
+  text-decoration: none;
+  }
+
+  footer {
+  background: black;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2em;
+  }
+
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+  .image h1 {
+  font-size: 1.8em;
+  }
+
+  .about, .projects, .skills, .contact {
+  padding: 10px;
+
+  }
+
+
+  .social-icons img {
+  width: 40px;
+  }
+  }
   </style>
 </head>
 
-
 <body>
 
-  <header>
+  <header class="header">
     <div class="image">
-      <img src="img/aman-photoaidcom-cropped.jpg" alt="image" width="160px">
-      <h1>Hello! I'm Aman Kumar</h1>
+      <img src="img/aman-photoaidcom-cropped.jpg" alt="Aman Kumar photo" width="160px" loading="lazy" />
+      <h1>Hello! I'm <span style="color: yellow
+      ;">AMAN KUMAR</span></h1>
       <p>Aspiring Web Developer</p>
     </div>
   </header>
   <hr>
-  <section>
-    <h2>About Me</h2>
-    <table >
-          <tr>
-            <td>Name</td>
-            <td>Aman Kumar</td>
-          </tr>
-          <tr>
-            <td>Current Education</td>
-            <td>Pursuing BCA from Raj SMS, Babatpur, varanasi</td>
-          </tr>
-          <tr>
-            <td>10+2 Qualification</td>
-            <td>Passed with 63.2% from shri baldeo inter college</td>
-          </tr>
-          <tr>
-            <td>10th Qualification</td>
-            <td>Passed with 70.66% from shri baldeo inter college</td>
-          </tr>
-          <tr>
-            <td>Career Aspiration</td>
-            <td>Web Development</td>
-          </tr>
-          <tr>
-            <td>Teaching Experience</td>
-            <td>5 Years</td>
-          </tr>
-          <tr>
-            <td>Subjects Taught</td>
-            <td> Mathematics and Computer science</td>
-          </tr>
 
-       </table>
-
+  <main>
+    <section class="about">
+      <h2 style="color: yellow;">About Me</h2>
+      <div class="about-table">
+        <div><strong>Name:</strong> Aman Kumar</div>
+        <div><strong>Current Education:</strong> Pursuing BCA from Raj SMS, Babatpur, Varanasi</div>
+        <div><strong>10+2 Qualification:</strong> Passed with 63.2% from Shri Baldeo Inter College</div>
+        <div><strong>10th Qualification:</strong> Passed with 70.66% from Shri Baldeo Inter College</div>
+        <div><strong>Career Aspiration:</strong> Web Development</div>
+        <div><strong>Teaching Experience:</strong> 5 Years</div>
+        <div><strong>Subjects Taught:</strong> Mathematics and Computer Science</div>
+      </div>
+    </section>
     <hr>
-  </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Portfolio Website</li>
-      <li>Mini Blog Page</li>
-      
-    </ul>
-  </section>
-  <hr>
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS (Coming Soon)</li>
-      <li>Teaching (with 5 years)</li>
-    </ul>
-  </section>
-  <hr>
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: prajapatiamn420@email.com</p>
-    <p>Mo. No.: +91-7700078092</p>
-    <a href="https://wa.me/917700078092"><img src="img/whatsapp.png" alt="whatsapp" width="50px"></a>
-    <a href="https://www.instagram.com/desi_kumhar_420?igsh=MXhzdGExNGw2N3Bmcw=="><img src="img/insta.png" alt="instagram" width="50px"></a>
-    <a href="https://www.linkedin.com/in/aman-kumar-57696a2b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/link.jpg" alt="linkdin" width="50px"></a>
-  </section>
-  <hr>
+    <section class="projects">
+      <h2 style="color: yellow;">Projects</h2>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Mini Blog Page</li>
+      </ul>
+    </section>
+    <hr>
+
+    <section class="skills">
+      <h2 style="color: yellow;">Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS (Coming Soon)</li>
+        <li>Teaching (5 years)</li>
+      </ul>
+    </section>
+    <hr>
+
+    <section class="contact">
+      <h2 style="color: yellow;">Contact Me</h2>
+      <p>Email: <a href="mailto:prajapatiamn420@email.com">prajapatiamn420@email.com</a></p>
+      <p>Phone: <a href="tel:+917700078092">+91-7700078092</a></p>
+      <div class="social-icons">
+        <a href="https://wa.me/917700078092"><img src="img/whatsapp.png" alt="WhatsApp" width="50" loading="lazy" /></a>
+        <a href="https://www.instagram.com/desi_kumhar_420"><img src="img/insta.png" alt="Instagram" width="50"
+            loading="lazy" /></a>
+        <a href="https://www.linkedin.com/in/aman-kumar-57696a2b7"><img src="img/aman1-removebg-preview.png"
+            alt="LinkedIn" width="50" loading="lazy" /></a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-   <div style="background-color: black;"> <p>&copy; 2025 Aman Kumar All rights reserved.</p></div>
+    <div class="footer-content">
+      <p>&copy; 2025 Aman Kumar. All rights reserved.</p>
+    </div>
   </footer>
-
 
 </body>
 
