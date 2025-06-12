@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aman Kumar | Front-End Developer</title>
   <style>
-    body {
+    :root {
+      --primary-color: #ff5722;
+      --secondary-color: #ffc107;
+      --bg-gradient: linear-gradient(135deg, #ff9800, #ff5722);
+      --text-light: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.1);
+      --border-radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(yellow, red, orange, yellow, red);
-      color: white;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-light);
+      line-height: 1.6;
       text-align: center;
     }
 
     header, section, footer {
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     img {
@@ -24,77 +39,111 @@
 
     .image img {
       border-radius: 50%;
+      width: 180px;
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .image img:hover {
+      transform: scale(1.05);
     }
 
     .image h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
+      font-size: 3em;
+      margin-top: 15px;
+      color: var(--secondary-color);
     }
 
     .image p {
       font-size: 1.5em;
-      margin: 0;
+      opacity: 0.9;
     }
 
-    .about, .projects, .skills, .contact {
-      max-width: 800px;
+    section {
+      max-width: 900px;
       margin: auto;
-      font-size: 1.1em;
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      margin-top: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+      font-size: 2em;
     }
 
     .about-table div {
       margin: 10px 0;
-    }
-
-    h2 {
-      color: yellow;
-      margin-bottom: 5px;
+      font-size: 1.1em;
     }
 
     ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
 
     li {
-      margin: 8px 0;
-      padding: 8px;
-      background-color: wheat;
-      border-radius: 10px;
-      color: red;
-      text-shadow: aqua;
+      margin: 10px auto;
+      padding: 12px;
+      background: white;
+      color: #ff5722;
+      border-radius: var(--border-radius);
+      max-width: 400px;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    li:hover {
+      background: var(--secondary-color);
+      color: #000;
+      transform: scale(1.05);
     }
 
     .contact a {
-      color: white;
-      text-decoration: none;
+      color: var(--text-light);
+      text-decoration: underline;
+      font-weight: bold;
     }
 
     .social-icons {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .social-icons img {
-      margin: 10px;
       width: 50px;
-      transition: transform 0.3s ease;
+      margin: 0 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border-radius: 50%;
+      padding: 5px;
+      background: white;
     }
 
     .social-icons img:hover {
       transform: scale(1.3);
-      background-color: yellow;
-      border-radius: 70%;
+      background-color: var(--secondary-color);
     }
 
     footer {
-      background: black;
-      padding: 15px;
-      font-size: 1.1em;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 2px solid var(--secondary-color);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 40px auto;
+      width: 60%;
     }
 
     @media only screen and (max-width: 600px) {
       .image h1 {
-        font-size: 1.8em;
+        font-size: 2em;
       }
 
       .image p {
@@ -107,19 +156,18 @@
 
       li {
         font-size: 1em;
-        
       }
     }
   </style>
 </head>
-
 <body>
 
   <header class="image">
-    <img src="img/aman-photoaidcom-cropped.jpg" alt="Photo of Aman Kumar" width="160" loading="lazy" />
-    <h1>Hello! I'm <span style="color: yellow;">AMAN KUMAR</span></h1>
+    <img src="img/aman-photoaidcom-cropped.jpg" alt="Photo of Aman Kumar" loading="lazy" />
+    <h1>Hello! I'm <span style="color: white;">AMAN KUMAR</span></h1>
     <p>Aspiring Web Developer</p>
-  </header> <hr>
+  </header>
+  <hr />
 
   <main>
     <section class="about">
@@ -133,7 +181,7 @@
         <div><strong>Teaching Experience:</strong> 5 Years</div>
         <div><strong>Subjects Taught:</strong> Mathematics and Computer Science</div>
       </div>
-    </section> <hr>
+    </section>
 
     <section class="projects">
       <h2>Projects</h2>
@@ -141,17 +189,16 @@
         <li>Portfolio Website</li>
         <li>Mini Blog Page</li>
       </ul>
-    </section> <hr>
+    </section>
 
     <section class="skills">
       <h2>Skills</h2>
       <ul>
         <li>HTML</li>
         <li>CSS (Coming Soon)</li>
-        <li>Teaching (5 years)</li>
         <li>Canva</li>
       </ul>
-    </section> <hr>
+    </section>
 
     <section class="contact">
       <h2>Contact Me</h2>
@@ -168,8 +215,8 @@
           <img src="img/aman1-removebg-preview.png" alt="LinkedIn" loading="eager" />
         </a>
       </div>
-    </section> 
-  </main> 
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Aman Kumar. All rights reserved.</p>
