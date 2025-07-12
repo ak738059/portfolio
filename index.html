@@ -50,6 +50,7 @@
 
     .image img:hover {
       transform: scale(1.05);
+      box-shadow: 1px 0px 500px yellow;
     }
 
     .image h1 {
@@ -68,8 +69,8 @@
       margin: auto;
       background-color: var(--card-bg);
       border-radius: var(--border-radius);
-      margin-top: 30px;
-      box-shadow: 10px 5px 50px yellow;
+      margin-top: 100px;
+      box-shadow: 1px 5px 50px yellow;
     }
 
     section h2{
@@ -115,9 +116,10 @@
     }
     .flex-container div:hover{
       background-color: orange;
-      color:red;
-      transition: transform 2s;
-      transform: scale(10.5s);
+      color:white;
+      transition: transform 2.0;
+      transform: scale(1.07);
+       box-shadow: 15px 5px 50px wheat;
     }
 
     li:hover {
@@ -128,35 +130,36 @@
 
     .contact a {
       color: var(--text-light);
-      text-decoration: underline;
+      text-decoration-color:wheat;
       font-weight: bold;
     }
 
     .social-icons {
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .social-icons img {
       width: 50px;
-      margin: 0 10px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin: 10px;
+      transition: transform 0.3s ease, background-color 0.9s ease;
       border-radius: 50%;
-      padding: 5px;
+      padding: 4px;
       background: white;
     }
 
     .social-icons img:hover {
-      transform: scale(1.25);
-      background-color: sandybrown;
-      border-radius: 30%;
+      transform: scale(1.09);
+      background-color: blueviolet;
+      border-radius: 35%;
+       box-shadow: 1px 5px 50px yellow;
     }
 
     footer {
       background: #222;
       color: #fff;
       padding: 20px;
-      margin-top: 40px;
-      border-top: 2px solid var(--secondary-color);
+      margin-top: 50px;
+      border-top: 5px solid var(--secondary-color);
     }
 
     hr {
@@ -166,24 +169,89 @@
       width: 60%;
     }
 
-    @media only screen and (max-width: 600px) {
-      .image h1 {
-        font-size: 2em;
-      }
+   @media only screen and (max-width: 350px) {
+  section {
+    margin-top: 50px;
+    padding: 20px 10px;
+  }
 
-      .image p {
-        font-size: 1.2em;
-      }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      .social-icons img {
-        width: 40px;
-      }
+  .flex-container div {
+    width: 80%;
+    font-size: 1.5em;
+  }
 
-      li {
-        font-size: 1em;
-      }
-    }
-  </style>
+  .about-table div {
+    font-size: 1em;
+  }
+
+  .contact p {
+    font-size: 1em;
+  }
+
+  .image img {
+    width: 130px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .image h1 {
+    font-size: 1.7em;
+  }
+
+  .image p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    margin-top: 50px;
+    padding: 20px 10px;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flex-container div {
+    width: 80%;
+    font-size: 1.5em;
+  }
+
+  .about-table div {
+    font-size: 1em;
+  }
+
+  .contact p {
+    font-size: 1em;
+  }
+
+  .image img {
+    width: 130px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .image h1 {
+    font-size: 1.7em;
+  }
+
+  .image p {
+    font-size: 1.1em;
+  }
+}
+</style>
+
 </head>
 
 <body>
